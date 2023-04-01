@@ -37,7 +37,7 @@ export default function ArticlesDetail() {
         <h1 className="text-4xl min-[320px]:text-7xl min-[360px]:text-8xl min-[400px]:text-[7rem] xl:text-9xl text-[#fbd236] mb-4">ARTICLE NOT FOUND!!!</h1>
         <div className="btn-home bg-[#068076] p-4 rounded-xl w-1/2 m-auto">
           <p className="text-xl min-[320px]:text-2xl min-[360px]:text-3xl min-[400px]:text-4xl font-semibold text-[#fbd236] text-center">
-            <Link to={`/spacenews`}>Home</Link>
+            <Link to={`/`}>Home</Link>
           </p>
         </div>
       </div>
@@ -77,7 +77,7 @@ export default function ArticlesDetail() {
 
               <div className="btn-home bg-[#068076] p-4 rounded-xl">
                 <p className="text-xl min-[320px]:text-2xl min-[360px]:text-3xl min-[400px]:text-4xl font-semibold text-[#fbd236] text-center">
-                  <Link to={`/spacenews/`}>Home</Link>
+                  <Link to={`/`}>Home</Link>
                 </p>
               </div>
             </div>

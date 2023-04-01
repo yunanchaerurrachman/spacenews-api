@@ -42,7 +42,7 @@ export default function Articles() {
             {articles.map(function (article) {
               return <article key={article.id} className="article-content my-3 min-[320px]:my-4 bg-[#068076] p-4 rounded-xl">
                 <h2 className="text-xl min-[320px]:text-2xl min-[360px]:text-3xl min-[400px]:text-4xl font-semibold text-[#fbd236]">
-                  <Link to={`/spacenews/${article.id}`}>{article.title}</Link></h2>
+                  <Link to={`/${article.id}`}>{article.title}</Link></h2>
                 <time className="text-xl min-[320px]:text-2xl min-[360px]:text-3xl min-[400px]:text-4xl font-semibold text-[#fbd236]">{new Date(article.publishedAt).toLocaleDateString()}</time>
               </article>
             })}

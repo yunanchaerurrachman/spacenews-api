@@ -8,8 +8,8 @@ const App = () => {
   return (
     <div className="app">
       <Routes>
-        <Route path="/spacenews" element={<Articles />} />
-        <Route path="/spacenews/:id" element={<ArticlesDetail />} />
+        <Route path="/" element={<Articles />} />
+        <Route path="/:id" element={<ArticlesDetail />} />
       </Routes>
     </div>
   )
