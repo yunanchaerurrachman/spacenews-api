@@ -27,7 +27,7 @@ export default function ArticlesDetail() {
   }, [params]);
 
   if (notFound) {
-    return <section className="not-found p-2 min-[320px]:p-4 md:px-0 md:py-0 grid content-center w-full md:h-screen min-h-screen bg-[url('./assets/background.jpg')] bg-cover bg-center bg-no-repeat bg-fixed box-border">
+    return <section className="not-found p-2 min-[320px]:p-4 md:px-0 md:py-0 grid content-center w-full h-full bg-[url('./assets/background.jpg')] bg-cover bg-center bg-no-repeat bg-fixed box-border">
       <Helmet>
         <title>Article Not Found!!!</title>
         <meta name="Article Not Found!!!" content="Article Not Found!!!" />
@@ -51,7 +51,7 @@ export default function ArticlesDetail() {
         <meta name={article.title} content={article.summary} />
       </Helmet>
 
-      <section className="article-detail p-2 min-[320px]:p-4 md:px-0 md:py-0 w-full bg-[url('./assets/background.jpg')] bg-cover bg-center bg-no-repeat bg-fixed box-border md:h-screen min-h-screen">
+      <section className="article-detail p-2 min-[320px]:p-4 md:px-0 md:py-0 w-full h-full bg-[url('./assets/background.jpg')] bg-cover bg-center bg-no-repeat bg-fixed box-border">
         {loading ? (
           <section className="loading grid items-center h-screen">
             <div className="container-loading-content py-2 mb-3 min-[360px]:mb-4 text-center">
